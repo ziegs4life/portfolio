@@ -28,12 +28,12 @@ section {
 
 #homesec {
   background:
- url(https://lh3.googleusercontent.com/jbq8M6rQzASNHRm3FR9eaNBC7r-A7KON9qbisAIJtn6YVBSsanuhFIgc4it6jzqFkSvNQpd0wMzF9-o=w1275-h628-rw);
+ url(https://lh6.googleusercontent.com/fG1FHSP9QgDPFvLmOL3bWO8kZC_IX192aft4cOz0EG4l5xxCfk0JwSHIsK621IuLtm5d-aW2lK-nclM=w1276-h585-rw);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-bottom: 20px;
-  
+
 }
 
 #nav_wrap {
@@ -123,9 +123,17 @@ nav a:hover {
 }
 
 .logoPic {
+  margin-top: 3px;
   width: 70px;
-  height:70px;
+  height:60px;
 
+}
+
+button {
+  width: 130px;
+  height: 50px;
+  color: blue;
+  text-align: center;
 }
 
 #social {
@@ -158,6 +166,14 @@ nav a:hover {
 #mainsocial {
   font-size: 35px;
   line-height: 80px;
+}
+
+.icon-facebook-sign{
+  color: #4867aa;
+}
+
+.icon-linkedin-sign{
+  color: #0077B5 ;
 }
 
 .right {
