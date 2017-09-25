@@ -72,16 +72,16 @@ nav a {
 }
 
 nav a:nth-child(1) {
-  border-top: 5px solid #80BB80;
+  border-top: 5px solid #31BA00;
 }
 nav a:nth-child(2) {
-  border-top: 5px solid #9B5E5E;
+  border-top: 5px solid #0069D9;
 }
 nav a:nth-child(3) {
-  border-top: 5px solid #5656B3;
+  border-top: 5px solid #5A0089;
 }
 nav a:nth-child(4) {
-  border-top: 5px solid #aaa;
+  border-top: 5px solid #B40000;
 }
 
 nav a:hover {
@@ -220,4 +220,103 @@ hoverblk {
 .hoverblk:hover {
   color: #5656B3;
   transition: .3s;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+  font-family: 'Ubuntu';
+  background: #000000;
+  color: white;
+  text-align: center;
+}
+.skills {
+  list-style: none;
+  font-size: 20px;
+}
+.h1 {
+  font-size: 20px;
+  font-weight: 50px;
+}
+
+.skills .skill {
+  display: block;
+  position: relative;
+  height: 60px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.skills .skill:before, .skills .skill:after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.skills .skill:before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  background: #eeeeee;
+}
+.skills .skill:after {
+  background-color: #2ea994;
+  background: repeating-linear-gradient(-45deg, #2ea994, #2ea994 10px, #31b59f 10px, #31b59f 20px);
+  height: 16px;
+  top: 2px;
+  right: 95%;
+  bottom: 2px;
+  left: 2px;
+  -webkit-animation: fill 2s both;
+  -moz-animation: fill 2s both;
+  animation: fill 2s both;
+}
+.skills .skill:nth-child(1):after {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.skills .skill:nth-child(2):after {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.skills .skill:nth-child(3):after {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.skills .skill:nth-child(4):after {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.skills .skill:nth-child(5):after {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+.skills .skill[aria-label="HTML"]:after {
+  right: 75%;
+}
+.skills .skill[aria-label="CSS"]:after {
+  right: 50%;
+}
+.skills .skill[aria-label="Javascript"]:after {
+  right: 35%;
+}
+.skills .skill[aria-label="Php/Larval"]:after {
+  right: 20%;
+}
+.skills .skill[aria-label="Other"]:after {
+  right: 10%;
+}
+
+@keyframes fill {
+  from {
+    right: 100%;
+  }
 }
